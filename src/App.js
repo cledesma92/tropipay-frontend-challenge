@@ -10,6 +10,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <h1>FronEnd Challenge</h1>
+        <h2>Buscador de repositorios</h2>
         <SearchBar/>
         <Results/> 
       </React.Fragment>
