@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import { SearchBar } from "./components/SearchBar"
-import { Results } from "./components/Results"
+
 
 class App extends Component {
   render() {
@@ -12,7 +12,7 @@ class App extends Component {
         <h1>FronEnd Challenge</h1>
         <h2>Buscador de repositorios</h2>
         <SearchBar/>
-        <Results/> 
+
       </React.Fragment>
     );
   }
