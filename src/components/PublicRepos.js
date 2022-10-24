@@ -19,22 +19,17 @@ const PublicRepos = () => {
   const [ responsePublicRepos, setResponsePublicRepos] = useState(false)
 
   React.useEffect(()=> {
-    console.log("empezando estado")
     setTimeout(() => {
       setResponsePublicRepos(false);
     }, 3000)  
-      console.log("terminando validacion") 
   }, [])
 
 
   const loadPubliRepos = async () => {
-    console.log("click")
-
     try {
       const result = await axios(`https://api.github.com/repositories`);
       setPublicRepos(result)
       setResponsePublicRepos(true)
-      console.log(result)
     } catch (err) {
       console.log(err)
     }
@@ -50,10 +45,11 @@ const PublicRepos = () => {
         <ul>
           <li style={{ display: "flex", alignItems: "center"}}><i style={{marginRight: "5px"}} className="tiny material-icons green-text">check_box</i>The public GitHub API is used.</li>
           <li style={{ display: "flex", alignItems: "center"}}><i style={{marginRight: "5px"}} className="tiny material-icons green-text">check_box</i>Any public repo on GitHub can be viewed.</li>
-          <li style={{ display: "flex", alignItems: "center"}}><i style={{marginRight: "5px"}} className="tiny material-icons green-text">check_box</i>You can navigate between the repository folders.</li>
+          <li style={{ display: "flex", alignItems: "center"}}><i style={{marginRight: "5px"}} className="tiny material-icons green-text">check_box</i>You can open the repositories.</li>
+          {/* <li style={{ display: "flex", alignItems: "center"}}><i style={{marginRight: "5px"}} className="tiny material-icons green-text">check_box</i>You can navigate between the repository folders.</li> */}
           <li style={{ display: "flex", alignItems: "center"}}><i style={{marginRight: "5px"}} className="tiny material-icons green-text">check_box</i>This project is developed in react</li>
           <li style={{ display: "flex", alignItems: "center"}}><i style={{marginRight: "5px"}} className="tiny material-icons green-text">check_box</i>Materialize was used for the CSS.</li>
-          <li style={{ display: "flex", alignItems: "center"}}><i style={{marginRight: "5px"}} className="tiny material-icons green-text">check_box</i>You can open and view the contents of any file in a repository.</li>
+          {/* <li style={{ display: "flex", alignItems: "center"}}><i style={{marginRight: "5px"}} className="tiny material-icons green-text">check_box</i>You can open and view the contents of any file in a repository.</li> */}
         </ul>
         <p style={{display: "inline"}} >Show list of public repositories:</p>
           <button 

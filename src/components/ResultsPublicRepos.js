@@ -2,8 +2,6 @@ import React from 'react';
 
 const ResultsPublicRepos = (props) => {
   const { publicRepos } = props;
-  console.log("test: ", publicRepos.data)
-  console.log("test: ", (publicRepos.data[8]).name)
   const listPublicRepos = publicRepos.data.map((item, index) => 
     <li style={{listStyle:"none", position: "relative"}} key={item.id}>
       <a className='collection-item teal-text lighten-1' href={item.html_url} target="_blanck">
@@ -20,8 +18,7 @@ const ResultsPublicRepos = (props) => {
       </a>
 
     </li>);
-  console.log("list: ",listPublicRepos)
-  console.log(listPublicRepos.length)
+
   return (
     <>
         <div className="modal-content grey lighten-4">

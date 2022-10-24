@@ -25,8 +25,6 @@ const SearchBar = () => {
   };
   
   const handleClick = async () => {
-    console.log(searchInput);
-
     try {
       const result = await axios(`https://api.github.com/users/${searchInput}/repos`);
       setRepos(result);

@@ -15,18 +15,18 @@ const ContactMe = () => {
             <div className="row">
               <div className="input-field col l6 s12">
                 <input id="first_name" type="text" name='first_name' required/>
-                <label for="first_name">Your name</label>
+                <label >Your name</label>
               </div>
               <div className="input-field col l6 s12">
               <input id="email" type="email" name='email' required/>
-                <label for="email">Email</label>
+                <label >Email</label>
               </div>
             </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <i class="material-icons prefix">mode_edit</i>
-                <textarea id="message" class="materialize-textarea" name='message' required></textarea>
-                <label for="message">Your message</label>
+            <div className="row">
+              <div className="input-field col s12">
+                <i className="material-icons prefix">mode_edit</i>
+                <textarea id="message" className="materialize-textarea" name='message' required></textarea>
+                <label >Your message</label>
               </div>
             </div>
             <button className='right btn waves-effect waves-light indigo darken-1' type="submit">Send message</button>

@@ -47,20 +47,20 @@ const Nav = () => {
           </div>
         </li>
         <li>
-          <a onClick={toggleMenu} href='#one'><i class="fa-solid fa-caret-right"></i><b>Public repos</b></a>
+          <a onClick={toggleMenu} href='#one'><i className="fa-solid fa-caret-right"></i><b>Public repos</b></a>
         </li>
         <li>
-          <a onClick={toggleMenu} href='#two'><i class="fa-solid fa-caret-right"></i><b>Repo browser</b></a>
+          <a onClick={toggleMenu} href='#two'><i className="fa-solid fa-caret-right"></i><b>Repo browser</b></a>
         </li>
         <li>
-          <a onClick={toggleMenu} href='#three'><i class="fa-solid fa-caret-right"></i><b>Contact me</b></a>
+          <a onClick={toggleMenu} href='#three'><i className="fa-solid fa-caret-right"></i><b>Contact me</b></a>
         </li>
         <li>
           <div className='divider'></div>
-          <a href='https://tropipaycom.notion.site/Tropipay-FrontEnd-Challenge-GitHub-repo-browser-8451cfe5d2a8406eba4c81646cd90b71' target="_blanck"><i class="fa-solid fa-bolt"></i><b>Tropypay Challeng</b></a>
+          <a href='https://tropipaycom.notion.site/Tropipay-FrontEnd-Challenge-GitHub-repo-browser-8451cfe5d2a8406eba4c81646cd90b71' target="_blanck"><i className="fa-solid fa-bolt"></i><b>Tropypay Challeng</b></a>
         </li>
         <li>
-          <a href='https://tropipaycom.notion.site/Tropipay-FrontEnd-Challenge-GitHub-repo-browser-8451cfe5d2a8406eba4c81646cd90b71' target="_blanck"><i class="fa-solid fa-link"></i><b>Tropypay web site</b></a>
+          <a href='https://www.tropipay.com/' target="_blanck"><i className="fa-solid fa-link"></i><b>Tropypay web site</b></a>
         </li>
       </ul>
       
