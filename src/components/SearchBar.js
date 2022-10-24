@@ -11,15 +11,12 @@ import { Results } from "../components/Results"
 const SearchBar = () => {
   const [ searchInput, setSearchInput ] = useState('');
   const [ repos, setRepos ] = useState([]);
-  /* const [ error, setError ] = useState() */
+
   const [ response, setResponse] = useState(false)
 
   React.useEffect(()=> {
-    console.log("empezando estado")
     setTimeout(() => {
       setResponse(false);
-
-      console.log("terminando validacion") 
     }, 3000)
   }, [])
 
@@ -43,21 +40,19 @@ const SearchBar = () => {
 
   return (
     <>
-      <div className="section white">
-        <div className="row container">
-          <h4 className="header"><b>GitHub repo browser</b></h4>
-          <p className="grey-text text-darken-3 lighten-3">The objective of this app is viewing and navigating the contents of a public GitHub repository. The final user you can to browse among the folders of any repository and visualize the content of its different files.</p>
-          <p className="grey-text text-darken-3 lighten-3">To navigate between the different public repositories you must first enter the username of a valid GitHub account.</p>
-         
-          <div /* style={{ padding: "20px" }} */>
+      <div className="section grey lighten-4">
+        <div className="row container grey-text text-darken-3 lighten-3">         
+            <h4 id='two'><b>Repo browser per owner</b></h4>
+            <p className="grey-text text-darken-3 lighten-3">It is also possible to navigate between the different public repositories of any user by simply entering the username of the owner of a valid GitHub account in the search bar. For example, my username is: <i><b>cledesma92</b></i></p>
             <input 
+              className='searchBar'
               type="text" 
               placeholder="Search username" 
               value={searchInput} 
               onChange={handleChange}
             />
-            <button className="right btn waves-effect waves-light" onClick={handleClick}>Search <i className="material-icons right">search</i></button>
-          </div>
+            <button className="right btn waves-effect waves-light indigo darken-1" onClick={handleClick}>Search <i className="material-icons right">search</i></button>
+          
         </div>
       </div>
 

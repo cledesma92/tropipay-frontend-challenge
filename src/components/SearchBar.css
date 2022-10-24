@@ -1,3 +1,9 @@
 .label-icon {
     width: 100%;
 }
+
+.searchBar {
+    width: calc(100% - 140px) !important;
+    height: 36px !important;
+}
+

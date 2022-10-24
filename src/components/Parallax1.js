@@ -1,10 +1,10 @@
 import React from 'react';
-import "./Parallax.css"
+import "./Parallax1.css"
 import "materialize-css/dist/css/materialize.min.css";
 import "materialize-css/dist/js/materialize.min.js";
 
 
-const Parallax = () => {
+const Parallax1 = () => {
 
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.parallax');
@@ -22,7 +22,7 @@ const Parallax = () => {
   );
 }
 
-export {Parallax}
+export {Parallax1}
 
 
 
