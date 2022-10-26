@@ -19,7 +19,6 @@ const Nav = () => {
   const click_event = new CustomEvent('click');
 
   const toggleMenu = () => {
-    console.log("Click en el menu")
     document.querySelector(".sidenav-overlay").dispatchEvent(click_event);
   }
 
