@@ -48,6 +48,7 @@ const SearchBar = () => {
               placeholder="Search username" 
               value={searchInput} 
               onChange={handleChange}
+              required
             />
             <button className="right btn waves-effect waves-light indigo darken-1" onClick={handleClick}>Search <i className="material-icons right">search</i></button>
           
