@@ -61,6 +61,9 @@ const Nav = () => {
         <li>
           <a href='https://www.tropipay.com/' target="_blanck"><i className="fa-solid fa-link"></i><b>Tropypay web site</b></a>
         </li>
+        <li>
+          <a href='https://github.com/cledesma92/tropipay-frontend-challenge' target="_blanck"><i className="fa-solid fa-link"></i><b>Link to this repo</b></a>
+        </li>
       </ul>
       
     </nav>
