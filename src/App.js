@@ -20,14 +20,14 @@ class App extends Component {
 
           <meta property="og:url" content="https://tropipay-frontend-challenge.netlify.app/"/>
           <meta property="og:type" content="website"/>
-          <meta property="og:title" content="React App"/>
+          <meta property="og:title" content="GitHub API Challeng"/>
           <meta property="og:description" content="The objective of this app is viewing and navigating the contents of a public GitHub repository. The final user you can to browse among the folders of any repository and visualize the content of its different files."/>
           <meta property="og:image:secure_url" itemprop="image" content="https://i.imgur.com/JkY3Xsb.png"/>
 
           <meta name="twitter:card" content="summary_large_image"/>
           <meta property="twitter:domain" content="tropipay-frontend-challenge.netlify.app"/>
           <meta property="twitter:url" content="https://tropipay-frontend-challenge.netlify.app/"/>
-          <meta name="twitter:title" content="React App"/>
+          <meta name="twitter:title" content="GitHub API Challeng"/>
           <meta name="twitter:description" content="The objective of this app is viewing and navigating the contents of a public GitHub repository. The final user you can to browse among the folders of any repository and visualize the content of its different files."/>
           <meta name="twitter:image" content="https://i.imgur.com/JkY3Xsb.png"/>
         </Helmet>
